@@ -12,7 +12,7 @@
             </menuitem>
         </menu>
     </menuitem>
-
+    <!--  ==============  CURSO PABLOOO ===============  -->
     <menuitem label='Curso Pablo'>
         <icon>fa:book fa-fw</icon>
         <menu>
@@ -20,12 +20,16 @@
              <icon>fa:book fa-fw</icon>
                 <menu>
                     <menuitem label='Template View Básico'>
-                    <icon>fa:book fa-fw</icon>
-                    <action>TemplateViewBasico</action>    
+                        <icon>fa:book fa-fw</icon>
+                        <action>TemplateViewBasico</action>    
                     </menuitem>
                     <menuitem label='Template com Máscaras'>
-                    <icon>fa:book fa-fw</icon>
-                    <action>TemplateViewMask</action>    
+                        <icon>fa:book fa-fw</icon>
+                        <action>TemplateViewMask</action>    
+                    </menuitem>
+                    <menuitem label='Template de Repetição'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>TemplateViewRepeat</action>    
                     </menuitem>
                 </menu>
             </menuitem>
