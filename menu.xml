@@ -1,8 +1,22 @@
 <menu>
-    <menuitem label='AmostraDir'>
-        <icon>fa:code fa-fw</icon>
-        <action>Amostradir</action>
-    </menuitem>
+    
+            <menuitem label='Navegadir'>
+                <icon>fa:code fa-fw</icon>
+                <menu>
+                    <menuitem label='NavegaDir'>
+                    <icon>fa:code fa-fw</icon>
+                    <action>NavegaDir</action>    
+                    </menuitem>
+                </menu>
+                    <menu>
+                    <menuitem label='NavegaDir'>
+                    <icon>fa:code fa-fw</icon>
+                    <action>WelcomeView</action>    
+                    </menuitem>
+                </menu>
+
+            </menuitem>
+
     <menuitem label='Home'>
         <icon>fa:home fa-fw</icon>
         <menu>

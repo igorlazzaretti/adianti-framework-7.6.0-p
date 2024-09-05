@@ -7,14 +7,13 @@
  * @subpackage tutor
  * @author     GeminIgor igorlazzaretti.com
  */
-class Amostradir extends TPage
+class NavegaDir extends TPage
 {
-    private $form;
-    private $datagrid;
 
     public function __construct()
     {
         parent::__construct();
+        echo 'Voce está no Adianti Framework puro';
         echo 'Aqui será construído o programa Amostradir';
         echo "<br><br>" . "Meu primeiro programa que exibirá diretórios";
     }
