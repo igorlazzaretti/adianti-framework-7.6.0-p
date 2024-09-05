@@ -1,21 +1,49 @@
 <menu>
-    
-            <menuitem label='Navegadir'>
-                <icon>fa:code fa-fw</icon>
-                <menu>
-                    <menuitem label='NavegaDir'>
-                    <icon>fa:code fa-fw</icon>
+    <menuitem label='Navegadir'>
+        <icon>fa:code fa-fw</icon>
+        <menu>
+            <menuitem label='NavegaDir'>
+                    <icon>fa:rocket fa-fw</icon>
                     <action>NavegaDir</action>    
+            </menuitem>
+            <menuitem label='Wel-NavegaDir'>
+                    <icon>fa:code fa-fw</icon>
+                    <action>WelcomeView</action>    
+            </menuitem>
+        </menu>
+    </menuitem>
+
+    <menuitem label='Curso Pablo'>
+        <icon>fa:book fa-fw</icon>
+        <menu>
+            <menuitem label='Páginas e Containers'> 
+             <icon>fa:book fa-fw</icon>
+                <menu>
+                    <menuitem label='Template View Básico'>
+                    <icon>fa:book fa-fw</icon>
+                    <action>TemplateViewBasico</action>    
+                    </menuitem>
+                    <menuitem label='Template com Máscaras'>
+                    <icon>fa:book fa-fw</icon>
+                    <action>TemplateViewMask</action>    
                     </menuitem>
                 </menu>
-                    <menu>
+            </menuitem>
+            <menuitem label='Banco de Dados'> 
+            <icon>fa:book fa-fw</icon>
+                <menu>
                     <menuitem label='NavegaDir'>
+                    <icon>fa:rocket fa-fw</icon>
+                    <action>NavegaDir</action>    
+                    </menuitem>
+                    <menuitem label='Wel-NavegaDir'>
                     <icon>fa:code fa-fw</icon>
                     <action>WelcomeView</action>    
                     </menuitem>
                 </menu>
-
             </menuitem>
+        </menu>  
+    </menuitem>
 
     <menuitem label='Home'>
         <icon>fa:home fa-fw</icon>
