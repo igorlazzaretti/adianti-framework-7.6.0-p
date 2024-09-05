@@ -1,4 +1,8 @@
 <menu>
+    <menuitem label='AmostraDir'>
+        <icon>fa:code fa-fw</icon>
+        <action>Amostradir</action>
+    </menuitem>
     <menuitem label='Home'>
         <icon>fa:home fa-fw</icon>
         <menu>
