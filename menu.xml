@@ -2,30 +2,10 @@
     <menuitem label='Minhas Tarefas'>
         <icon>fa:code fa-fw</icon>
         <menu>
-            <menuitem label='NavegaDir'>
-                    <icon>fa:rocket fa-fw</icon>
-                    <action>NavegaDir</action>    
-            </menuitem>
-            <menuitem label='FilesystemIconViewMarcov1'>
+            <menuitem label='Visualizador de Arquivos'>
                     <icon>fa:code fa-fw</icon>
-                    <action>FilesystemIconViewMarcov1</action>  
-            </menuitem>
-            <menuitem label='FilesystemIconViewMarcov1Mod'>
-                    <icon>fa:code fa-fw</icon>
-                    <action>FilesystemIconViewMarcov1Mod</action>  
-            </menuitem>
-            <menuitem label='FilesystemIconView 100% Igor'>
-                    <icon>fa:code fa-fw</icon>
-                    <action>FilesystemIconViewIgor</action>    
+                    <action>FilesystemIconView</action>  
             </menuitem>  
-            <menuitem label='NavegaDirv1 100% Igor'>
-                    <icon>fa:code fa-fw</icon>
-                    <action>NavegaDirv1</action>    
-            </menuitem>
-            <menuitem label='NavegaDir V2 100% Igor'>
-                    <icon>fa:code fa-fw</icon>
-                    <action>NavegaDirv2</action>    
-            </menuitem>    
         </menu>
     </menuitem>
     <!--  ============== MENU CURSO PABLO ===============  -->

@@ -5,25 +5,33 @@ use Adianti\Widget\Dialog\TMessage;
 /**
  * FilesystemIconView do Marco Modificado
  *
- * @version    1.0
- * @package    samples
- * @subpackage tutor
- * @author     Pablo Dall'Oglio
- * @copyright  Copyright (c) 2006 Adianti Solutions Ltd. (http://www.adianti.com.br)
- * @license    http://www.adianti.com.br/framework-license
  */
-class FilesystemIconViewMarcov1Mod extends TPage
+class FilesystemIconView extends TPage
 {    
     private $iconview;
     private $storagPath = 'app';
     private $allowedExtensions = ['php', 'png'];
-
+    private $html;
+    
 //  Constructor method
     public function __construct($param)
     {
         parent::__construct();
 
+        TPage::include_css('app/resources/styles.css');
+        $this->html = new THtmlRenderer('app/resources/template.html');
 
+        $container = new TVBox;
+        $container->style = 'width: 100%';
+        $container->add(new TXMLBreadCrumb('menu.xml', __CLASS__));
+        $container->add($this->html);
+
+        // define replacements for the main section
+        $replace = array();
+         // add the build to the page
+         parent::add($container);
+
+         
         $fullPath = getcwd();
         $fullPath .= '/' . $this->storagPath;
 
@@ -80,21 +88,24 @@ class FilesystemIconViewMarcov1Mod extends TPage
          $this->iconview->setLabelAttribute('name');
          $this->iconview->setInfoAttributes(['name', 'path']);
 
-         $display_condition_download = function($object) {
+         $display_condition_file = function($object) {
              return ($object->type == 'file');
          };
 
-         $display_condition_open = function($object) {
+         $display_condition_folder = function($object) {
             return ($object->type == 'folder');
         };
 
-         $this->iconview->addContextMenuOption('Opções');
+         $this->iconview->addContextMenuOption('Selecione a opção desejada', );
          $this->iconview->addContextMenuOption('');
-         $this->iconview->addContextMenuOption('Abrir',   new TAction([$this, 'onOpen']),   'far:folder-open blue', $display_condition_open);
-         $this->iconview->addContextMenuOption('Realizar o Download',   new TAction([$this, 'onDownload']),   'far:folder-open blue', $display_condition_download);
+         $this->iconview->addContextMenuOption('Abrir',   new TAction([$this, 'onOpen']),   'far:folder-open blue', $display_condition_folder);
+         $this->iconview->addContextMenuOption('Realizar o Download',   new TAction([$this, 'onDownload']),   'far:folder-open blue', $display_condition_file);
 
 
          parent::add( $this->iconview );
+         
+         
+
     }
 
     // Método que garante a integridade do path
@@ -109,14 +120,14 @@ class FilesystemIconViewMarcov1Mod extends TPage
 
     public function onOpen($param) { 
     
-        echo '<p> Você abriu o diretório: ' . $param['path'] . ' </p>';
+     //   echo '<p> Você abriu o diretório: ' . $param['path'] . ' </p>';
         
     }
 
     // Open action
     public function onDownload($param)
     {
-        echo '<p> Você abriu o diretório: ' . $param['path'] . ' </p>';
+      //  echo '<p> Você abriu o diretório: ' . $param['path'] . ' </p>';
         
         // garante que tenha a prop path
         if (is_array($param) && isset($param['path']) && isset($param['name'])) {
