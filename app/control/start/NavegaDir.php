@@ -28,10 +28,15 @@ class NavegaDir extends TPage
         //Display
         echo '<ul>';
         foreach ($formattedEntries as $entry){
-            if (!$entry["isDirectory"]){
-                echo "<li>" . $entry['name'] . "</li>";
-            };
-        };
+            if (!$entry["isDirectory"])
+            {
+                echo "<li>" .  $entry['name'] . "</li>";
+            }
+            // else
+            // echo if it is a directory
+        }
+        echo '</ul>';
+
         echo '</ul>';
 
 

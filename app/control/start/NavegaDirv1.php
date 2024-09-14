@@ -1,9 +1,8 @@
 <?php
 
-    class FilesystemIconView extends TPage
+    class NavegaDirv1 extends TPage
     {
-        
-        //COPIEI E COLEI CONSTS
+            //COPIEI E COLEI CONSTS
         // Descrição do programa
         const DESC = 'Caaaaaaaa';      
         // versão do programa
@@ -22,9 +21,7 @@
             
             $this->iconview = new TIconView;
             
-            $caminho = "../app/control";
-
-            $dir = new DirectoryIterator( $caminho );
+            $dir = new DirectoryIterator( getcwd() );
             
             foreach ($dir as $fileinfo)
             {
@@ -93,7 +90,8 @@
      */
     public static function onDownload($param)
     {
-        new TMessage( 'info', '<a href="' . $param['path'] . '" download>' . "Clique Aqui" . '</a>' . 
-                        " para baixar o arquivo" . ' ' . $param['name'] . '.');
+        new TMessage( 'info',   var_dump($param) );
+                        new TMessage( 'info', '<a href="' . $param['path'] . '" download>' . "Clique Aqui" . '</a>' . 
+                        " para baixar o arquivo" . ' ' . $param['name'] . '.') ;
     }
-}
+    }
