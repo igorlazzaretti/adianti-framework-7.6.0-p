@@ -107,11 +107,17 @@ class FilesystemIconViewMarcov1Mod extends TPage
 
     // Empty function to reindex new path
 
-    public function onOpen($param) { }
+    public function onOpen($param) { 
+    
+        echo '<p> Você abriu o diretório: ' . $param['path'] . ' </p>';
+        
+    }
 
     // Open action
     public function onDownload($param)
     {
+        echo '<p> Você abriu o diretório: ' . $param['path'] . ' </p>';
+        
         // garante que tenha a prop path
         if (is_array($param) && isset($param['path']) && isset($param['name'])) {
             $path = $param['path'];
@@ -119,7 +125,8 @@ class FilesystemIconViewMarcov1Mod extends TPage
             $path .= '/' . $param['name'];
             
             $path = $this->checkPath($path);
-            var_dump( $path );
+            
+
             // ignora se for um dir
             if (is_dir($path)) {
                 return;
@@ -130,7 +137,7 @@ class FilesystemIconViewMarcov1Mod extends TPage
 
             
             if (!in_array($ext, $this->allowedExtensions)) {
-                new TMessage('error', 'File not allowed');
+                new TMessage('error', 'Opa! O Download deste Arquivo não foi autorizado.');
                 return;
             } 
                 else
