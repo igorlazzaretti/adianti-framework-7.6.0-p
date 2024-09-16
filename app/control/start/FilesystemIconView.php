@@ -10,14 +10,15 @@ class FilesystemIconView extends TPage
 {    
     private $iconview;
     private $storagPath = 'app';
-    private $allowedExtensions = ['php', 'png'];
-    private $html;
+    private $allowedExtensions = ['php', 'png']; // extensões autorizadas para download
+    private $html; // cabeçalho da página
     
-//  Constructor method
+    // Constructor method
     public function __construct($param)
     {
         parent::__construct();
 
+        // Cria o cabeçalho da página
         TPage::include_css('app/resources/styles.css');
         $this->html = new THtmlRenderer('app/resources/template.html');
 
@@ -26,12 +27,13 @@ class FilesystemIconView extends TPage
         $container->add(new TXMLBreadCrumb('menu.xml', __CLASS__));
         $container->add($this->html);
 
+
         // define replacements for the main section
         $replace = array();
-         // add the build to the page
-         parent::add($container);
+        // add the build to the page
+        parent::add($container);
 
-         
+        
         $fullPath = getcwd();
         $fullPath .= '/' . $this->storagPath;
 
@@ -42,7 +44,6 @@ class FilesystemIconView extends TPage
         }
     
         $path = $this->checkPath($path);
-
 
         $this->iconview = new TIconView;
 
@@ -76,12 +77,10 @@ class FilesystemIconView extends TPage
                     $item->path .= '/' . $fileinfo->getFilename();
                 }
 
-
                 $item->name = $fileinfo->getFilename();
           
                 $this->iconview->addItem($item);
             }
-
         }
 
          $this->iconview->setIconAttribute('icon');
@@ -101,11 +100,8 @@ class FilesystemIconView extends TPage
          $this->iconview->addContextMenuOption('Abrir',   new TAction([$this, 'onOpen']),   'far:folder-open blue', $display_condition_folder);
          $this->iconview->addContextMenuOption('Realizar o Download',   new TAction([$this, 'onDownload']),   'far:folder-open blue', $display_condition_file);
 
-
          parent::add( $this->iconview );
          
-         
-
     }
 
     // Método que garante a integridade do path
@@ -117,14 +113,11 @@ class FilesystemIconView extends TPage
     }
 
     // Empty function to reindex new path
-
+    // Função vazia. Ela é acionada quando um novo caminho for acionado.
     public function onOpen($param) { 
-    
-     //   echo '<p> Você abriu o diretório: ' . $param['path'] . ' </p>';
         
     }
 
-    // Open action
     public function onDownload($param)
     {
       //  echo '<p> Você abriu o diretório: ' . $param['path'] . ' </p>';
