@@ -148,7 +148,9 @@ class FilesystemIconView extends TPage
                 {
                 new TMessage( 'info', '<a href="' . $param['path'] . '" download>' . "Clique aqui" . '</a>' . 
                         " para baixar o arquivo" . ' ' . $param['name'] . '.') ;
-                }
+                
+                    }
+                
         }
     }
 }

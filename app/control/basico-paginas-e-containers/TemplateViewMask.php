@@ -25,7 +25,19 @@ class TemplateViewMask extends TPage
             
             $html->enableSection('main', $replace);
             
-            parent::add($html);
+
+
+            //breadCrumb
+                    // menu bread
+            //cria uma caixa vertical widhth:100% com os dados do menu
+            $vbox = new TVBox; 
+            $vbox->style = 'width:100%';
+            $vbox->add (new TXMLBreadCrumb('menu.xml', __CLASS__));
+            $vbox->add($html);
+
+
+
+            parent::add($vbox);
         }
         catch (Exception $e)
         {

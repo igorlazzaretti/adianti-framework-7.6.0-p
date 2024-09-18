@@ -27,7 +27,19 @@
                         <icon>fa:book fa-fw</icon>
                         <action>TemplateViewRepeat</action>    
                     </menuitem>
-                </menu>
+                    <menuitem label='Página Simples'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>SinglePageView</action>    
+                    </menuitem>
+                    <menuitem label='Janela Simples'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>SingleWindowView</action>    
+                    </menuitem>
+                    <menuitem label='Janela OnDemand'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>OnDemandWindowView</action>    
+                    </menuitem>
+                </menu> 
             </menuitem>
             <menuitem label='Banco de Dados'> 
             <icon>fa:book fa-fw</icon>
