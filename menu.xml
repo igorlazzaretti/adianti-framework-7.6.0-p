@@ -43,6 +43,14 @@
                         <icon>fa:book fa-fw</icon>
                         <action>ModalWindowView</action>    
                     </menuitem>
+                    <menuitem label='Conteúdo Embarcado: PDF'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>EmbeddedPDFView</action>    
+                    </menuitem>
+                    <menuitem label='Conteúdo Embarcado: Video'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>EmbeddedVideoView</action>    
+                    </menuitem>
                 </menu> 
             </menuitem>
             <menuitem label='Banco de Dados'> 
