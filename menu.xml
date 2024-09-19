@@ -39,6 +39,10 @@
                         <icon>fa:book fa-fw</icon>
                         <action>OnDemandWindowView</action>    
                     </menuitem>
+                    <menuitem label='Janela Modal'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>ModalWindowView</action>    
+                    </menuitem>
                 </menu> 
             </menuitem>
             <menuitem label='Banco de Dados'> 

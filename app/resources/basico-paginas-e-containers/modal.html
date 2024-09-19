@@ -1,0 +1,29 @@
+ <!-- Este html foi criado na Aula 7 do Módulo 2 do Curso Adianti Pablo.  -->
+ <!-- Ele é utilizado  no ModalWindowView, por exemplo.   -->
+ 
+
+<!-- [main] -->
+<div class="card">
+    <div class="card-header">  
+        {{title}}
+        
+        <div class="header-actions">
+            <div class="btn btn-danger" style="float:right" id="close-modal" >Fechar</div>
+        </div>
+    </div>
+    <div class="card-body">
+        {{body}}
+    </div>
+    <div class="card-footer">
+       {{footer}}
+    </div>
+
+</div>
+
+<!-- script para fechar o botao -->
+<script>
+    $('#close-modal').click( function() {
+        $('[widget="TWindow"]').remove();
+    });
+    </script>
+<!-- [/main] -->
