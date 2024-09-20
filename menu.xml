@@ -51,6 +51,42 @@
                         <icon>fa:book fa-fw</icon>
                         <action>EmbeddedVideoView</action>    
                     </menuitem>
+                    <menuitem label='Tabela'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>TableView</action>    
+                    </menuitem>
+                    <menuitem label='Panel Group'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>PanelGroupView</action>    
+                    </menuitem>
+                    <menuitem label='Scroll View'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>ScrollView</action>    
+                    </menuitem>
+                    <menuitem label='Tela em Abas com Notebook'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>NotebookView</action>    
+                    </menuitem>
+                    <menuitem label='Caixa Vertical VBox'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>VBoxView</action>    
+                    </menuitem>
+                    <menuitem label='Caixa Horizontal HBox'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>HBoxView</action>    
+                    </menuitem>
+                    <menuitem label='Diálogos: TMessage / Mensagem'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>MessageView</action>    
+                    </menuitem>
+                    <menuitem label='Diálogo: TQuestion / Pergunta'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>MessageQuestionView</action>    
+                    </menuitem>
+                    <menuitem label='Diálogo: de Input'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>DialogInputView</action>    
+                    </menuitem>
                 </menu> 
             </menuitem>
             <menuitem label='Banco de Dados'> 

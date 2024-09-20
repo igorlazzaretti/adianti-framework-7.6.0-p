@@ -1847,6 +1847,10 @@ body.skin-blue .main-header .navbar, body.skin-blue-light .main-header .navbar
 {
     background-color: #62a8ee;
 }
+body.skin-igor .main-header .navbar, body.skin-igor-light .main-header .navbar
+{
+    background-color: #6E57E0;
+}
 
 body.skin-green .main-header .navbar
 {
@@ -1856,6 +1860,10 @@ body.skin-green .main-header .navbar
 body.skin-blue .main-header .logo, body.skin-blue-light .main-header .logo
 {
     background-color: #2471be;
+}
+body.skin-igor .main-header .logo, body.skin-blue-light .main-header .logo
+{
+    background-color: #6E57E0;
 }
 
 body.skin-blue .main-header .logo:hover, body.skin-blue .main-header .navbar .sidebar-toggle:hover
