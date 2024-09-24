@@ -39,7 +39,8 @@ class FormularioVetorialEventos  extends TPage
         
 // CRIAREMOS botão de ação da linha (ver linha)
         $fieldlist->addButtonAction( new TAction([$this, 'showRow']), 'fa:info-circle purple', 'Mostrar Dados Inseridos Nesta Linha');
-
+// CRIANDO Toast
+        $fieldlist->setTotalUpdateAction(new TAction( [$this, 'onTotalUpdate'] ) );
 
         // Mover objetos de uma linha para Outra
         $fieldlist->enableSorting();
@@ -79,10 +80,35 @@ class FormularioVetorialEventos  extends TPage
     
 // Metodo ShowRow
 
-    public static function showRow($param)
+    public static function   showRow($param)
     {
-        new TMessage('info', json_encode($param));
+        new TMessage('info', str_replace(',', '<br>',json_encode($param)));
     }
+
+    // Gera um Toast quando atualizado Valor na Coluna number
+    public static function onTotalUpdate($param)
+    {   // Agora vamos percorrer o vetor list_data gerado pelo formulário
+        
+        // echo '<pre>';
+        // var_dump($param);
+        // echo '<pre>';
+
+        $grandtotal = 0;
+        if ($param['list_data'])
+        {    
+            foreach ($param['list_data'] as $row)
+            {       // str replace substitui o primeiro parametro pelo segundo dos dados do terceiro parâmetro
+                    // floatval transforma strings em float (numeros com virgula)
+                $grandtotal += floatval(str_replace(['.',','],['','.'],$row['valor']));
+            }
+        }
+
+        // Cria o toast
+    //  TToast::show('info', '<b>Total: </b>' . $grandtotal);  
+        TToast::show('info', '<b>Total: </b>' . number_format( $grandtotal, 2, ',', '.'), 'bottom right');  
+
+            
+    }   
 
     public static function onSend($param)
     {
