@@ -1,10 +1,10 @@
 <?php
-return [
-    'host'  =>  "",
-    'port'  =>  "",
-    'name'  =>  "",
-    'user'  =>  "",
-    'pass'  =>  "",
-    'type'  =>  "sqlite",
-    'prep'  =>  "1"
-];
+// return [
+//     'host'  =>  "127.0.7.1",
+//     'port'  =>  "",
+//     'name'  =>  "curso",
+//     'user'  =>  "postgres",
+//     'pass'  =>  "",
+//     'type'  =>  "pgsql",
+//     'prep'  =>  "1"
+// ];
