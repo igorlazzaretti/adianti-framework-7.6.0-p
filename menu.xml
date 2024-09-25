@@ -139,7 +139,7 @@
                     </menuitem>
                     <menuitem label='Campos Vetorial Eventos'>
                         <icon>fa:book fa-fw</icon>
-                        <action>FormularioVetorialEventos   </action>
+                        <action>FormularioVetorialEventos</action>
                     </menuitem>
                     <menuitem label='Check list'>
                         <icon>fa:book fa-fw</icon>
@@ -147,6 +147,29 @@
                     </menuitem>
                 </menu>
             </menuitem>
+<!-- ============== FORMULÁRIOS MÓDULO 3 ============== -->
+            <menuitem label='Utilitários'> 
+                <icon>fa:book fa-fw</icon>
+                <menu>
+                    <menuitem label='Cards'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>CardView</action>    
+                    </menuitem>
+                    <menuitem label='Cards com Vídeo'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>CardViewVideo</action>    
+                    </menuitem>
+                    <menuitem label='Visualização de Ícones'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>IconView</action>    
+                    </menuitem>
+                    <menuitem label='Visualização de Ícones do Sistema'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>FileSystemIconView</action>    
+                    </menuitem>
+                </menu>
+            </menuitem>
+            <!--  Final dos Itens Principais -->
         </menu>
     </menuitem>
 

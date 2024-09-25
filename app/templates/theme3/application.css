@@ -1866,6 +1866,17 @@ body.skin-igor .main-header .logo, body.skin-blue-light .main-header .logo
     background-color: #6E57E0;
 }
 
+.logo-lg{
+    text-decoration:bold;
+    transition: 900ms linear;
+    font-weight: bolder ;
+    
+}
+.logo-lg:hover{
+    
+
+}
+
 body.skin-blue .main-header .logo:hover, body.skin-blue .main-header .navbar .sidebar-toggle:hover
 {
     background-color: #1d5b99;
