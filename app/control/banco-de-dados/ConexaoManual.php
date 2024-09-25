@@ -1,5 +1,5 @@
 <?php
-class FormularioManual extends TPage
+class ConexaoManual extends TPage
 {
     private $form;
     

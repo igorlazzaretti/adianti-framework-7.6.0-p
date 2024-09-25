@@ -730,7 +730,7 @@ section.content
 }
 
 .layout-boxed {
-    background: #e0e0e0 !important;
+    /* background: #e0e0e0 !important; */
 }
 
 .main-header {

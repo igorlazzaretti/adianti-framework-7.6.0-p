@@ -28,7 +28,7 @@ class FormularioCheckList extends TPage
         $this->form->addFields([ new TLabel('Produtos')], [$lista]);
 
         // Adcionando o conteúdo
-        TTransaction::open( 'sample' );
+        TTransaction::open( 'curso' );
         $produtos = Produto::all();
         TTransaction::close();
         $lista->addItem( $produtos );
