@@ -103,6 +103,14 @@
                         <icon>fa:book fa-fw</icon>
                         <action>ConexaoPrepare</action>    
                     </menuitem>
+                    <menuitem label='Gravação Ativa'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>ActiveRecord</action>    
+                    </menuitem>
+                    <menuitem label='Gravação Produto'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>Object</action>    
+                    </menuitem>
                 </menu> 
             </menuitem>
 <!-- ============== FORMULÁRIOS MÓDULO 3 ============== -->
@@ -111,7 +119,7 @@
                 <menu>
                     <menuitem label='Forulário Hogsmead'>
                         <icon>fa:book fa-fw</icon>
-                        <action>FormularioHogsmeade</action>    
+                        <action>FormularioBootstrapHogsmeade</action>    
                     </menuitem>
                     <menuitem label='Forulário Manual'>
                         <icon>fa:book fa-fw</icon>
@@ -166,6 +174,10 @@
                     <menuitem label='Visualização de Ícones do Sistema'>
                         <icon>fa:book fa-fw</icon>
                         <action>FileSystemIconView</action>    
+                    </menuitem>
+                    <menuitem label='Visualização de Kanban'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>KanbanView</action>    
                     </menuitem>
                 </menu>
             </menuitem>

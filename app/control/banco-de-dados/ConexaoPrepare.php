@@ -9,6 +9,8 @@ class ConexaoPrepare extends TPage
         {
             TTransaction::open('curso');
             
+        // Para saber qual banco está conectado, 2 opções:
+        
             //var_dump(TTransaction::getDatabase());
             //var_dump(TTransaction::getDatabaseInfo());
             
