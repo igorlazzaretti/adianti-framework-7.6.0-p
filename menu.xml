@@ -14,6 +14,7 @@
    <menuitem label='Curso Pablo'>
         <icon>fa:book fa-fw</icon>
         <menu>
+<!--  ============== PÁGINAS E CONTAINER MÓDULO 2 ============== -->
             <menuitem label='Páginas e Containers'> 
             <icon>fa:book fa-fw</icon>
                 <menu>
@@ -90,8 +91,8 @@
                         <action>DialogInputView</action>    
                     </menuitem>
                 </menu>  
-            </menuitem>
-<!--  ============== BANCO DE DADOS MÓDULO 2 ============== -->
+            </menuitem><!-- FIM DO MÓDULO 2 PÁGINAS E CONTAINER -->
+<!--  ============== BANCO DE DADOS MÓDULO 3 ============== -->
             <menuitem label='Banco de Dados'> 
                 <icon>fa:book fa-fw</icon>
                 <menu>
@@ -112,8 +113,8 @@
                         <action>Object</action>    
                     </menuitem>
                 </menu> 
-            </menuitem>
-<!-- ============== FORMULÁRIOS MÓDULO 3 ============== -->
+            </menuitem><!-- FIM DO MÓDULO 3 -->
+<!-- ============== FORMULÁRIOS MÓDULO 4 ============== -->
             <menuitem label='Formulários'> 
                 <icon>fa:book fa-fw</icon>
                 <menu>
@@ -154,8 +155,18 @@
                         <action>FormularioCheckList</action>
                     </menuitem>
                 </menu>
-            </menuitem>
-<!-- ============== FORMULÁRIOS MÓDULO 3 ============== -->
+            </menuitem><!-- FIM DO MÓDULO 4 FORMS-->
+<!-- ============== DATAGRID MÓDULO 5 ============== -->
+            <menuitem label='Datagrid'> 
+                <icon>fa:book fa-fw</icon>
+                <menu>
+                    <menuitem label='DatagridBootstrap'>
+                        <icon>fa:book fa-fw</icon>
+                        <action>DatagridBootstrap</action>    
+                    </menuitem>
+                </menu>
+            </menuitem><!-- FIM DO MÓDULO 5 DATAGRID -->
+<!-- ============== UTILITÁRIOS MÓDULO 8 ============== -->
             <menuitem label='Utilitários'> 
                 <icon>fa:book fa-fw</icon>
                 <menu>
@@ -180,11 +191,10 @@
                         <action>KanbanView</action>    
                     </menuitem>
                 </menu>
-            </menuitem>
+            </menuitem><!-- FIM DO MÓDULO 8 UTILITÁRIOS-->
             <!--  Final dos Itens Principais -->
         </menu>
     </menuitem>
-
 <!-- ============== MENU PRINCIPAL ============= -->
     <menuitem label='Home'>
         <icon>fa:home fa-fw</icon>

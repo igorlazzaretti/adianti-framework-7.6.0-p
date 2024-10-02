@@ -1,4 +1,10 @@
 <?php
+
+use Adianti\Widget\Container\TFrame;
+use Adianti\Widget\Container\TNotebook;
+use Adianti\Widget\Container\TPanel;
+use Adianti\Widget\Form\TLabel;
+
 /**
  * Interface builder that takes a XML file save by Adianti Studio Designer and renders the form into the interface.
  *
