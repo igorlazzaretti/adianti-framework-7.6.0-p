@@ -1,4 +1,9 @@
 <?php
+
+use Adianti\Control\TPage;
+use Adianti\Database\TTransaction;
+use Adianti\Widget\Dialog\TMessage;
+
 class ConexaoPrepare extends TPage
 {
     public function __construct()

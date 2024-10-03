@@ -19,3 +19,17 @@ class Produto extends TRecord
         parent::addAttribute('local_foto');
     }
 }
+
+/*
+    Os atributos são retirados do BANCO DE DADOS
+
+  CREATE TABLE produto(
+  id INTEGER PRIMARY KEY NOT NULL,
+  descricao VARCHAR(200),
+  estoque float,
+  preco_venda float,
+  unidade VARCHAR(200),
+  local_foto text
+
+*/
+// Os objetos serão gravados no banco de dados na classe ObjectStore (app/control)       
